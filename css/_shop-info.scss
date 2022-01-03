@@ -1,0 +1,127 @@
+.shop-info {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: $white;
+  &--bg-gold {
+    background-color: $gold1;
+  }
+  &--text-black {
+    color: $black2;
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: auto;
+    @media #{$middle} {
+      width: 14rem;
+    }
+  }
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 33rem;
+    margin-left: auto;
+    margin-right: auto;
+    @media #{$middle} {
+      flex-direction: column;
+    }
+  }
+  &__address {
+    font-size: 1.2rem;
+    font-style: normal;
+    @media #{$middle} {
+      padding-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+  }
+  &--aside {
+    @media #{$middle} {
+      padding-top: 0;
+    }
+    .shop-info__contact {
+      @media #{$middle} {
+        align-items: start;
+      }
+    }
+    .shop-info__address {
+      @media #{$middle} {
+        padding-bottom: 2rem;
+      }
+    }
+    .shop-info-table {
+      @media #{$middle} {
+        margin-right: auto;
+        margin-left: 0;
+      }
+    }
+  }
+  &--toppage {
+    @media #{$middle} {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    .shop-info__logo {
+      @media #{$middle} {
+        margin: 0 auto 3rem;
+      }
+    }
+    .shop-info-table {
+      @media #{$middle} {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 45%;
+        min-width: 45rem;
+        max-width: 49rem;
+        margin-bottom: 4rem;
+        padding: 2rem;
+      }
+    }
+    .shop-info-table__row {
+      @media #{$middle} {
+        justify-content: space-between;
+        width: 44%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.shop-info-table {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  min-width: 20.4rem;
+  max-width: 24rem;
+  margin: 0 auto 1.4rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-top: solid .1rem $gold2;
+  border-bottom: solid .1rem $gold2;
+  &--no-border {
+    border-style: none;
+    padding: 0;
+  }
+  &__row {
+    display: flex;
+  }
+  @mixin shop-info-table-cell {
+    width: auto;
+    font-size: 1.4rem;
+    font-weight: 400;
+    @media #{$middle} {
+      font-size: 1.6rem;
+    }
+  }
+  &__h {
+    @include shop-info-table-cell;
+    margin-right: auto;
+  }
+  &__d {
+    @include shop-info-table-cell;
+    text-align: right
+  }
+}

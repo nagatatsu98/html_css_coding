@@ -1,0 +1,90 @@
+.text--right {
+  text-align: right;
+}
+
+.text--left {
+  text-align: left;
+}
+
+.text--upcase {
+  text-transform: uppercase;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-40 {
+  margin-top: 4rem;
+}
+
+.mt-50 {
+  margin-top: 5rem;
+}
+
+.mt-60 {
+  margin-top: 6rem;
+}
+
+.mr-10 {
+  margin-right: 1rem;
+}
+
+.mb-20 {
+  margin-bottom: 2rem;
+}
+
+.mb-40 {
+  margin-bottom: 4rem;
+}
+
+.mb-60 {
+  margin-bottom: 6rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pt-15 {
+  padding-top: 1.5rem;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.sp-only {
+  display: block;
+  @media #{$middle} {
+    display: none;
+  }
+}
+
+.pc-only {
+  display: none;
+  @media #{$middle} {
+    display: block;
+  }
+}
+
+.pc-only-inline {
+  display: none;
+  @media #{$middle} {
+    display: inline;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

@@ -1,0 +1,16 @@
+.slide-show {
+  width: 100%;
+  &__main {
+    width: 100%;
+    height: auto;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__thumbnail {
+    width: calc((100% - 4rem) / 4);
+    height: auto;
+  }
+}

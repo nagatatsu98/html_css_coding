@@ -1,0 +1,62 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.7rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__h {
+    width: auto;
+    margin-right: auto;
+    line-height: 1;
+  }
+  &__d {
+    width: auto;
+    line-height: 1;
+  }
+}
+
+/* 
+ * 2分割テーブル (table division 2)
+ *
+ * mobile表示時は.tableクラスと同じように表示される
+ * PC表示時は、1行中にrowを2つ含めることができる
+ *
+ */
+.table-div2 {
+  @extend .table;
+  @media #{$middle} {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__row {
+    @extend .table__row;
+    @media #{$middle} {
+      width: 45%;
+      margin-bottom: 2rem;
+      &:last-child,
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
+    &--border {
+      @media #{$middle} {
+        padding-bottom: 1.7rem;
+        border-bottom: 1px solid #aaa;
+      }
+    }
+  }
+  &__h {
+    @extend .table__h;
+  }
+  &__d {
+    @extend .table__d;
+  }
+}

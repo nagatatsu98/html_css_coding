@@ -1,0 +1,49 @@
+.sns {
+  display: flex;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    border-radius: 50%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.sns__item--size-sm {
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.2rem;
+}
+
+.sns__item--size-responsive {
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.2rem;
+  @media #{$middle} {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.sns__item--dark {
+  background-color: $gold1;
+  a {
+    color: $white;
+  }
+}
+
+.sns__item--light {
+  background-color: $white;
+  a {
+    color: $gold1;
+  }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Shop</title>
+    <meta name="description" content="イギリスをイメージしたシックで落ち着いたカフェ。テラス席も完備し、昼も夜も過ごしやすい空間を提供します。無垢の木材が目印です。">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/78f047775a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="index.html">
+        <picture>
+          <source srcset="./images/logo/logo.png"
+                  media="(min-width: 769px)">
+          <img src="./images/logo/logo_sp.png" alt="サンプルショップロゴ">
+        </picture>
+      </a>
+      <div class="header__button" id="header__button"><i class="fas fa-bars" aria-label="menu"></i></div>
+      <!-- overlay -->
+      <div class="header__overlay">
+        <!-- mobile nav -->
+        <nav class="nav h-75">
+          <ul class="nav__list nav__list--column">
+            <li><a class="nav__link text--upcase" href="information.html">Information</a></li>
+            <li><a class="nav__link text--upcase" href="about.html">About</a></li>
+            <li><a class="nav__link text--upcase" href="menu.html">Menu</a></li>
+          </ul>
+        </nav>
+        <!-- shop-info -->
+        <div class="shop-info h-25">
+          <div class="shop-info-table">
+            <div class="shop-info-table__row">
+              <div class="shop-info-table__h">営業時間</div>
+              <div class="shop-info-table__d">10:00 ～ 22:00</div>
+            </div>
+            <div class="shop-info-table__row">
+              <div class="shop-info-table__h">電話番号</div>
+              <div class="shop-info-table__d">03-0000-0000</div>
+            </div>
+          </div>
+          <div class="shop-info__contact">
+            <address class="shop-info__address text--left">
+              100-0001
+              <br>
+              東京都渋谷区神宮前1-1000
+            </address>
+            <div class="sns">
+              <div class="sns__item sns__item--size-sm sns__item--light"><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></div>
+              <div class="sns__item sns__item--size-sm sns__item--light"><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></div>
+              <div class="sns__item sns__item--size-sm sns__item--light"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- desktop nav -->
+      <nav class="nav nav--desktop">
+        <ul class="nav__list">
+          <li><a class="nav__link text--upcase" href="information.html">Information</a></li>
+          <li><a class="nav__link text--upcase" href="about.html">About</a></li>
+          <li><a class="nav__link text--upcase" href="menu.html">Menu</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cover cover--sub">
+      <div class="cover__img">
+        <img class="" src="./images/cover/cover_menu.jpg" alt="background-cover">
+      </div>
+      <div class="cover__text-container">
+        <h1 class="cover__title  text--upcase">Menu</h1>
+      </div>
+    </div>
+    <div class="content flex-row container-menu">
+      <main class="content__main">
+      <!-- menu -->
+      <section>
+        <div class="shop-menu">
+          <div class="slide-show shop-menu__slide-container">
+            <img class="slide-show__main" src="./images/menu/drink_1.jpg" alt="drink1" width="360" height="202">
+            <div class="slide-show__list shop-menu__list-container">
+              <img class="slide-show__thumbnail" src="./images/menu/drink_1.jpg" alt="drink1" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/drink_2.jpg" alt="drink2" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/drink_3.jpg" alt="drink3" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/drink_4.jpg" alt="drink4" width="70" height="39">
+            </div>
+          </div>
+          <div class="shop-menu__text">
+            <h3 class="shop-menu__heading text--upcase">Drink<span class="shop-menu__sub-heading">ドリンク</span></h3>
+            <div class="table-div2">
+              <div class="table-div2__row table-div2__row--border">
+                <div class="table-div2__h">コーヒー</div>
+                <div class="table-div2__d">300円</div>
+              </div>
+              <div class="table-div2__row table-div2__row--border">
+                <div class="table-div2__h">アイスコーヒー</div>
+                <div class="table-div2__d">300円</div>
+              </div>
+              <div class="table-div2__row">
+                <div class="table-div2__h">紅茶</div>
+                <div class="table-div2__d">400円</div>
+              </div>
+              <div class="table-div2__row">
+                <div class="table-div2__h">クリームソーダ</div>
+                <div class="table-div2__d">500円</div>
+              </div>
+            </div>
+          </div>
+        </div><div class="shop-menu">
+          <div class="slide-show shop-menu__slide-container">
+            <img class="slide-show__main" src="./images/menu/bread_1.jpg" alt="bread1" width="360" height="202">
+            <div class="slide-show__list shop-menu__list-container">
+              <img class="slide-show__thumbnail" src="./images/menu/bread_1.jpg" alt="bread1" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/bread_2.jpg" alt="bread2" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/bread_3.jpg" alt="bread3" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/bread_4.jpg" alt="bread4" width="70" height="39">
+            </div>
+          </div>
+          <div class="shop-menu__text">
+            <h3 class="shop-menu__heading text--upcase">Bread<span class="shop-menu__sub-heading">パン</span></h3>
+            <div class="table-div2">
+              <div class="table-div2__row table-div2__row--border">
+                <div class="table-div2__h">パン</div>
+                <div class="table-div2__d">200円</div>
+              </div>
+              <div class="table-div2__row table-div2__row--border">
+                <div class="table-div2__h">クロワッサン</div>
+                <div class="table-div2__d">200円</div>
+              </div>
+              <div class="table-div2__row">
+                <div class="table-div2__h">サンドウィッチ</div>
+                <div class="table-div2__d">500円</div>
+              </div>
+              <div class="table-div2__row">
+                <div class="table-div2__h">パンケーキ</div>
+                <div class="table-div2__d">600円</div>
+              </div>
+            </div>
+          </div>
+        </div><div class="shop-menu">
+          <div class="slide-show shop-menu__slide-container">
+            <img class="slide-show__main" src="./images/menu/pasta_1.jpg" alt="pasta1" width="360" height="202">
+            <div class="slide-show__list shop-menu__list-container">
+              <img class="slide-show__thumbnail" src="./images/menu/pasta_1.jpg" alt="pasta1" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/pasta_2.jpg" alt="pasta2" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/pasta_3.jpg" alt="pasta3" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/pasta_4.jpg" alt="pasta4" width="70" height="39">
+            </div>
+          </div>
+          <div class="shop-menu__text">
+            <h3 class="shop-menu__heading text--upcase">Pasta<span class="shop-menu__sub-heading">パスタ</span></h3>
+            <div class="table-div2">
+              <div class="table-div2__row table-div2__row--border">
+                <div class="table-div2__h">ボロネーゼ</div>
+                <div class="table-div2__d">800円</div>
+              </div>
+              <div class="table-div2__row table-div2__row--border">
+                <div class="table-div2__h">ジュノベーゼパスタ</div>
+                <div class="table-div2__d">800円</div>
+              </div>
+              <div class="table-div2__row">
+                <div class="table-div2__h">カルボナーラ</div>
+                <div class="table-div2__d">1,000円</div>
+              </div>
+              <div class="table-div2__row">
+                <div class="table-div2__h">ボンゴレビアンコ</div>
+                <div class="table-div2__d">1,000円</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop-menu">
+          <div class="slide-show shop-menu__slide-container">
+            <img class="slide-show__main" src="./images/menu/sweets_1.jpg" alt="sweets1" width="360" height="202">
+            <div class="slide-show__list shop-menu__list-container">
+              <img class="slide-show__thumbnail" src="./images/menu/sweets_1.jpg" alt="sweets1" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/sweets_2.jpg" alt="sweets2" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/sweets_3.jpg" alt="sweets3" width="70" height="39">
+              <img class="slide-show__thumbnail" src="./images/menu/sweets_4.jpg" alt="sweets4" width="70" height="39">
+            </div>
+          </div>
+          <div class="shop-menu__text">
+            <h3 class="shop-menu__heading text--upcase">Sweets<span class="shop-menu__sub-heading">スウィーツ</span></h3>
+            <div class="table-div2">
+              <div class="table-div2__row table-div2__row--border">
+                <div class="table-div2__h">ジェラート</div>
+                <div class="table-div2__d">400円</div>
+              </div>
+              <div class="table-div2__row table-div2__row--border">
+                <div class="table-div2__h">ムース</div>
+                <div class="table-div2__d">500円</div>
+              </div>
+              <div class="table-div2__row">
+                <div class="table-div2__h">カップケーキ</div>
+                <div class="table-div2__d">600円</div>
+              </div>
+              <div class="table-div2__row">
+                <div class="table-div2__h">ワッフル</div>
+                <div class="table-div2__d">700円</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </main>
+      <aside class="content__aside container-menu-aside">
+        <!-- shop -->
+        <section class="pc-only">
+          <div class="section-heading content__aside-heading-pos">
+            <h2 class="section-heading__sub-heading text--upcase">Categories</h2>
+          </div>
+          <nav class="nav-aside">
+            <ul class="nav-aside__list">
+              <li><a class="nav-aside__link text--upcase" href="information.html">Information</a></li>
+              <li><a class="nav-aside__link text--upcase" href="about.html">About</a></li>
+              <li><a class="nav-aside__link text--upcase" href="menu.html">Menu</a></li>
+            </ul>
+          </nav>
+        </section>
+        <div class="content__divider pc-only"></div>
+        <!-- shop -->
+        <section>
+          <div class="section-heading  content__aside-heading-pos">
+            <h2 class="section-heading__sub-heading text--upcase">Shop Information</h2>
+          </div>
+          <!-- information -->
+          <div class="shop-info shop-info--text-black shop-info--aside">
+            <div class="shop-info-table shop-info-table--no-border mb-20">
+              <div class="shop-info-table__row">
+                <div class="shop-info-table__h">営業時間</div>
+                <div class="shop-info-table__d">10:00 ～ 22:00</div>
+              </div>
+              <div class="shop-info-table__row">
+                <div class="shop-info-table__h">電話番号</div>
+                <div class="shop-info-table__d">03-0000-0000</div>
+              </div>
+            </div>
+            <div class="shop-info__contact">
+              <address class="shop-info__address text--left">
+                100-0001
+                <br>
+                東京都渋谷区神宮前1-1000
+              </address>
+              <div class="sns">
+                <div class="sns__item sns__item--size-responsive sns__item--dark"><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></div>
+                <div class="sns__item sns__item--size-responsive sns__item--dark"><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></div>
+                <div class="sns__item sns__item--size-responsive sns__item--dark"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- twitter timeline -->
+        <div class="twitter-embedded">
+          <a class="twitter-timeline" data-height="500" href="https://twitter.com/TwitterJP?ref_src=twsrc%5Etfw">Tweets by TwitterJP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </aside>
+    </div>
+    <footer class="footer content-footer">
+      <small class="footer__copyright">© Sample Shop.</small>
+    </footer>
+    
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/slideshow.js"></script>
+  </body>
+</html>

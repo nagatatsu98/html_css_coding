@@ -1,0 +1,34 @@
+.carousel {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.slick-list {
+  height: inherit;
+}
+
+.slick-track {
+  height: inherit;
+}
+
+.slick-dots {
+  bottom: 1.5rem;
+}
+
+.slick-dots li button::before {
+  color: $white;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button::before {
+  color: $gold1;
+  opacity: 1;
+}

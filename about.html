@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Shop</title>
+    <meta name="description" content="イギリスをイメージしたシックで落ち着いたカフェ。テラス席も完備し、昼も夜も過ごしやすい空間を提供します。無垢の木材が目印です。">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/78f047775a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="index.html">
+        <picture>
+          <source srcset="./images/logo/logo.png"
+                  media="(min-width: 769px)">
+          <img src="./images/logo/logo_sp.png" alt="サンプルショップロゴ">
+        </picture>
+      </a>
+      <div class="header__button" id="header__button"><i class="fas fa-bars" aria-label="menu"></i></div>
+      <!-- overlay -->
+      <div class="header__overlay">
+        <!-- mobile nav -->
+        <nav class="nav h-75">
+          <ul class="nav__list nav__list--column">
+            <li><a class="nav__link text--upcase" href="information.html">Information</a></li>
+            <li><a class="nav__link text--upcase" href="about.html">About</a></li>
+            <li><a class="nav__link text--upcase" href="menu.html">Menu</a></li>
+          </ul>
+        </nav>
+        <!-- shop-info -->
+        <div class="shop-info h-25">
+          <div class="shop-info-table">
+            <div class="shop-info-table__row">
+              <div class="shop-info-table__h">営業時間</div>
+              <div class="shop-info-table__d">10:00 ～ 22:00</div>
+            </div>
+            <div class="shop-info-table__row">
+              <div class="shop-info-table__h">電話番号</div>
+              <div class="shop-info-table__d">03-0000-0000</div>
+            </div>
+          </div>
+          <div class="shop-info__contact">
+            <address class="shop-info__address text--left">
+              100-0001
+              <br>
+              東京都渋谷区神宮前1-1000
+            </address>
+            <div class="sns">
+              <div class="sns__item sns__item--size-sm sns__item--light"><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></div>
+              <div class="sns__item sns__item--size-sm sns__item--light"><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></div>
+              <div class="sns__item sns__item--size-sm sns__item--light"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- desktop nav -->
+      <nav class="nav nav--desktop">
+        <ul class="nav__list">
+          <li><a class="nav__link text--upcase" href="information.html">Information</a></li>
+          <li><a class="nav__link text--upcase" href="about.html">About</a></li>
+          <li><a class="nav__link text--upcase" href="menu.html">Menu</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cover cover--sub">
+      <div class="cover__img">
+        <img class="" src="./images/cover/cover_about.jpg" alt="background-cover">
+      </div>
+      <div class="cover__text-container">
+        <h1 class="cover__title  text--upcase">About</h1>
+      </div>
+    </div>
+    <div class="content flex-row container-about">
+      <main class="content__main">
+        <!-- about -->
+        <div class="about-item">
+          <img class="about-item__img" src="./images/about/about_1.jpg" alt="about1" width="360" height="203">
+          <div class="about-item__text">
+            <p class="about-item__paragraph">イギリスをイメージしたシックで落ち着いたカフェ。テラス席も完備し、昼も夜も過ごしやすい空間を提供します。無垢の木材が目印です。</p>
+            <p class="about-item__paragraph about-item__paragraph--pc-only">テーブルや椅子、コーヒーカップはイギリスから輸入しております。</p>
+            <p class="about-item__paragraph about-item__paragraph--pc-only">駅から徒歩10分以内、座席数は100名。貸し切りでパーティーも対応しております。</p>
+            <p class="about-item__paragraph about-item__paragraph--pc-only">ご来店おまちしております。</p>
+          </div>
+        </div>
+        <div class="about-item">
+          <img class="about-item__img" src="./images/about/about_2.jpg" alt="about2" width="360" height="203">
+          <div class="about-item__text">
+            <p class="about-item__paragraph">店内はソファ席が20席、テーブル席が24席、外のウッドデッキにはテーブル席が2席あります。</p>
+            <p class="about-item__paragraph about-item__paragraph--pc-only">季節によって、店内のインテリアが変わります。クリスマスの時期やハロウィンの時期には店員も仮装して接客を行います。</p>
+            <p class="about-item__paragraph about-item__paragraph--pc-only">完全分煙化しているため、喫煙される方も安心してご利用いただけます。</p>
+          </div>
+        </div>
+        <div class="about-item">
+          <img class="about-item__img" src="./images/about/about_3.jpg" alt="about3" width="360" height="203">
+          <div class="about-item__text">
+            <p class="about-item__paragraph">季節限定のスウィーツもありますので、詳しくはINFORMATIONをご覧ください。</p>
+            <p class="about-item__paragraph about-item__paragraph--pc-only">週間でオススメのスイーツメニューがあります。コーヒーとセットだとお得になりますので、ご来店の際にはぜひチェックしてください。</p>
+            <p class="about-item__paragraph about-item__paragraph--pc-only">貸し切りパーティーの際に誕生日ケーキなどもご用意できます。ご予約人数に合わせたプランをご提供いたします。ケーキのご予約は来店の3日前までにご連絡ください。</p>
+          </div>
+        </div>
+      </main>
+      <aside class="content__aside container-about-aside">
+        <!-- shop -->
+        <section class="pc-only">
+          <div class="section-heading content__aside-heading-pos">
+            <h2 class="section-heading__sub-heading text--upcase">Categories</h2>
+          </div>
+          <nav class="nav-aside">
+            <ul class="nav-aside__list">
+              <li><a class="nav-aside__link text--upcase" href="information.html">Information</a></li>
+              <li><a class="nav-aside__link text--upcase" href="about.html">About</a></li>
+              <li><a class="nav-aside__link text--upcase" href="menu.html">Menu</a></li>
+            </ul>
+          </nav>
+        </section>
+        <div class="content__divider pc-only"></div>
+        <!-- shop -->
+        <section>
+          <div class="section-heading  content__aside-heading-pos">
+            <h2 class="section-heading__sub-heading text--upcase">Shop Information</h2>
+          </div>
+          <!-- information -->
+          <div class="shop-info shop-info--text-black shop-info--aside">
+            <div class="shop-info-table shop-info-table--no-border mb-20">
+              <div class="shop-info-table__row">
+                <div class="shop-info-table__h">営業時間</div>
+                <div class="shop-info-table__d">10:00 ～ 22:00</div>
+              </div>
+              <div class="shop-info-table__row">
+                <div class="shop-info-table__h">電話番号</div>
+                <div class="shop-info-table__d">03-0000-0000</div>
+              </div>
+            </div>
+            <div class="shop-info__contact">
+              <address class="shop-info__address text--left">
+                100-0001
+                <br>
+                東京都渋谷区神宮前1-1000
+              </address>
+              <div class="sns">
+                <div class="sns__item sns__item--size-responsive sns__item--dark"><a href="https://twitter.com/TwitterJP" target="_blank"><i class="fab fa-twitter" aria-label="twitter"></i></a></div>
+                <div class="sns__item sns__item--size-responsive sns__item--dark"><a href="https://www.facebook.com/facebookappJapan/" target="_blank"><i class="fab fa-facebook-f" aria-label="facebook"></i></a></div>
+                <div class="sns__item sns__item--size-responsive sns__item--dark"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- twitter timeline -->
+        <div class="twitter-embedded">
+          <a class="twitter-timeline" data-height="500" href="https://twitter.com/TwitterJP?ref_src=twsrc%5Etfw">Tweets by TwitterJP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </aside>
+    </div>
+    <footer class="footer content-footer">
+      <small class="footer__copyright">© Sample Shop.</small>
+    </footer>
+    
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/hamburger.js"></script>
+  </body>
+</html>

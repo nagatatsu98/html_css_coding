@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &--column {
+      flex-direction: column;
+      height: 100%;
+      max-height: 25rem;
+      text-align: center;
+    }
+  }
+  &__link {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -.1rem;
+    color: $gold1;
+    @media #{$middle} {
+      font-size: 2rem;
+      padding-left: 4rem;
+    }
+  }
+  &--desktop {
+    display: none;
+    @media #{$middle} {
+      display: block;
+    }
+  }
+}

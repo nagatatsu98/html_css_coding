@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: $header-height;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0, .7);
+  @media #{$middle} {
+    padding: 0 14rem;
+    height: $header-height-mobile;
+  }
+  &__button {
+    font-size: 2rem;
+    color: $gold1;
+    @media #{$middle} {
+      display: none;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: $header-height;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: calc(100vh - #{$header-height});
+    box-sizing: border-box;
+    background-color: rgba(0,0,0, .9);
+  }
+}

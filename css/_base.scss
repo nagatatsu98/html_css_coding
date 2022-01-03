@@ -1,0 +1,41 @@
+$white: #fff;
+$light-gray:#ddd;
+$black1: #000;
+$black2: #222;
+$gray: #777;
+$gold1: #b19833;
+$gold2: #ebd47a;
+
+// ヘッダーの高さ
+$header-height: 5rem;
+$header-height-mobile: 7rem;
+
+// メディアクエリ
+$middle: "(min-width: 769px)";
+
+// ベーススタイル
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* Typography */
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $black2;
+  line-height: 1.7;
+  
+  /* Visual */
+  background-color: $white;
+}
+
+a {
+  color: $black2;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
